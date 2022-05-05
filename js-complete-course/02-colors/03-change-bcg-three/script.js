@@ -9,8 +9,16 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function getRandom() {
 
     // your code here
-
+    let randomC_olor = ("#")
+    function randomColor() {
+        const random = Math.floor(Math.random()*16777215).toString(16);
+        document.body.style.backgroundColor = randomC_olor + random;
+        
+    }
+    run.addEventListener('click', randomColor);
+   
 })();
+ 
