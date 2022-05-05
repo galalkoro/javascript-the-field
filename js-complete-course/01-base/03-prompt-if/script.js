@@ -8,9 +8,17 @@
 
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
-
 (function() {
 
+ 
   // your code here
-
+  let lieCake = prompt("Do you want cake? yes or no");
+  if(lieCake == "yes"){
+    alert("congratualation");
+  } else{
+    alert("More cake for me then :p !");
+  }
+ 
 })();
+
+ 
