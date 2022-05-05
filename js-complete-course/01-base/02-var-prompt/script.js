@@ -12,5 +12,11 @@
 (function() {
 
     // your code here
+    let person = prompt("enter name, Galal");
+    if (person != null){
+        document.getElementById("explain").innerHTML =
+        "Hello " + person + "! How are you today?";
+    }
+
 
 })();
