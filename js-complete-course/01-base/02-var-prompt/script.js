@@ -17,6 +17,4 @@
         document.getElementById("explain").innerHTML =
         "Hello " + person + "! How are you today?";
     }
-
-
 })();
