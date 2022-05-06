@@ -38,6 +38,7 @@
         }
 
         var result = "In: " + year + " ";
+        
         for (i = 0; i < fridays.length; i++) {
             alert(fridays[i] + " has a Friday 13th.")
         }
