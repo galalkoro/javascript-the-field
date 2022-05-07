@@ -12,5 +12,15 @@
 (function() {
 
     // your code here
+   var jaar = document.getElementById("dob-year");
+   var knop = document.querySelector('button');
+
+   knop.onclick = function(){
+       alert(2022 - jaar.value)
+
+       // for developer tool when they are using console  to print the result 
+       console.log(2022 - jaar.value)
+   }
+
 
 })();

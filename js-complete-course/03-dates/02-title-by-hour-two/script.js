@@ -14,5 +14,13 @@
     // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
 
     // your code here
+    var BeFore = new Date().getHours();
+    if (BeFore  >= 0 && BeFore  <= 17.30){
+     document.getElementById("target").innerHTML='Hello'
+    }else if (BeFore  >= 17.30 && BeFore  <= 22){
+        document.getElementById("target").innerHTML='Good evening'
+    }else {
+        document.getElementById("target").innerHTML='Good night'
+    }
 
 })();
