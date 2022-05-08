@@ -14,6 +14,28 @@
 
     var performOperation = function(operation) {
         // perform the operation
+
+        var result = 0;
+        var operandOne = parseInt(document.getElementById("op-one").value);
+        var operandtwo = parseInt(document.getElementById('op-two').value);
+        switch (operation){
+            case "addition":
+                result = (operandOne + operandtwo);
+                alert(result);
+                break;
+                case "substraction":
+                    result = (operandOne - operandtwo);
+                    alert(result);
+                    break;
+                    case "multiplication":
+                        result = (operandOne * operandtwo);
+                        alert(result);
+                        break;
+                        case "division":
+                            result = (operandOne / operandtwo);
+                            alert(result);
+                            break;
+        }     
     };
 
     Array.from(document.querySelectorAll("button.operator")).forEach(function($btn) {
