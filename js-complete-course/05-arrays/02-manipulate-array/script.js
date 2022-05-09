@@ -26,4 +26,13 @@
 
     // your code here
 
+    const withoutFirstAndLast = fruits.slice(1, -1);
+    console.log(withoutFirstAndLast);
+    //alert(withoutFirstAndLast); on console is match better to see the results
+    fruits.unshift("banana");
+    let newArry = fruits.push("kiwi");
+    console.log(fruits);
+    console.log(newArry);
+alert(fruits)
+
 })();
