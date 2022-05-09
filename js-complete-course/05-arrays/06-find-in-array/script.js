@@ -91,4 +91,11 @@
 
     // your code here
 
+    const outputEmailAndIndex = (firstName, lastName) => {
+        let index = people.findIndex(person => person.firstname === firstName && person.lastname === lastName);
+        console.log(people[index].email);
+        console.log(people[index].firstname +"," + people[index].lastname, "'index " + index + ". email: " + people[index].email);
+    };
+
+    document.getElementById("run").addEventListener("click", () => outputEmailAndIndex("Jean", "Dupont"));
 })();
