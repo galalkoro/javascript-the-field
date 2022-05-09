@@ -16,6 +16,11 @@
     document.getElementById("run").addEventListener("click", function() {
 
         // your code here
+        const numbers = [2, 4, 14, 10, 90, 23, 16];
+        numbers.sort((a, b) => a -b);
+        alert(numbers);
+
+       // console.log(numbers); -this one let you print the number on developer tool console log to nderstand better -
 
     });
 
