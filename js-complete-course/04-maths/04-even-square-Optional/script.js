@@ -15,6 +15,15 @@
 
         // your code here
 
+var msg= "";
+var res= "0";
+for (var i = 1; i<=21; i++) {
+    res = i * i;
+    msg  = msg + "" + i + "" + i + "" + "=" + res + "\21";
+    alert(msg);
+}
+
+
     });
 
 })();
