@@ -27,5 +27,11 @@
     ];
 
     // your code here
+    var arrayLength = fruits.length;
+    for(var i = 0; i <arrayLength; i++){
+        console.log(fruits[i]);
+        alert(fruits[i]); // for click will alert the name of fruits in array
 
+    }
+   
 })();
