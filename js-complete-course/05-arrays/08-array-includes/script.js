@@ -28,4 +28,13 @@
 
     // your code here
 
+    document.getElementById("run").addEventListener("click", () => {
+    if(fruits.indexOf("apple") !== 1)  { 
+ 
+        console.log("Yes, the value exists!")  
+        }else{
+            console.log("No, the value is absent.")  
+        }  
+    });
+
 })();
