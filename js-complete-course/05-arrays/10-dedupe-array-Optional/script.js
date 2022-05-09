@@ -29,4 +29,11 @@
     ];
 
     // your code here
+    document.getElementById("run").addEventListener("click", () => {
+        fruits = fruits.filter(function (value, index, array) { 
+            return array.indexOf(value) === index;
+          });
+          console.log(fruits);
+    });
+
 })();
