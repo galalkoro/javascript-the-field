@@ -16,7 +16,21 @@
     document.getElementById("run").addEventListener("click", function() {
 
         // your code here
-
+        var n = document.getElementById("number").value
+        result = factorial(n)
+       
+        alert("The factorial of " + n + " is " + result);
+        //console.log("The factorial of " + n + " is " + result); 
+        // for developer tool, open your brouser and inspect the console in oede to see the orint result you can uncomment the console log.
+        
+    function factorial(n){
+        //base case  when we return the final element of the factorial, which is 1.
+        if(n == 0 || n == 1){
+            return 1;
+            //recursive case a recursive function is a nonleaf function that calls itself.
+        }else{
+            return n * factorial(n-1);
+        }
+    }
     });
-
 })();
