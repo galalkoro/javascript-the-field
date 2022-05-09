@@ -40,5 +40,15 @@
     ];
 
     // your code here
+    
+    var peo = "";
+    const outputNamesToConsole = () => {
+      
+        people.forEach(person => 
+            console.log(++peo + ". " + person.lastname + '_' + person.firstname + '/' + person.email,
+             console.log(person.lastname + '_' + person.firstname + '/' + person.email)));
+       
+    };
+    document.getElementById("run").addEventListener("click", outputNamesToConsole);
 
 })();
