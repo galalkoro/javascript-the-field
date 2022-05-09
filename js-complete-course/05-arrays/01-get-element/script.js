@@ -27,5 +27,9 @@
     ];
 
     // your code here
+const size = 4;
+const items = fruits.slice(0, size)
+console.log(items)
+
 
 })();
