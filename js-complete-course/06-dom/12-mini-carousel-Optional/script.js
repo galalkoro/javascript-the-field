@@ -20,5 +20,18 @@
     ];
 
     // your code here
-
+    
+    
+    var img = document.getElementsByTagName("img")[0];
+    var image = 0;
+    
+    var button = () => {
+        if (image !== gallery.length - 1){  // !== selecting image from sorce without it will not show the picture 
+            img.src = gallery[++image];
+        } else {
+            img.src = gallery[image = 0];
+        }
+       
+    }
+    document.getElementById("next").addEventListener("click", button)
 })();
