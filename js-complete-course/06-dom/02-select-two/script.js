@@ -14,6 +14,6 @@
     // your code here
 
     document.querySelector("#target").innerHTML = "owned";
-    document.querySelector("#target").style.backgroundColor = "blue";
+    document.querySelector("#target").style.backgroundColor = "blue"; // extra exercise
 
 })();
