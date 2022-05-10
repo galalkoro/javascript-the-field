@@ -13,4 +13,22 @@
 
     // your code here
 
+    document.getElementById("pass-one").addEventListener("keydown", () => {
+
+        const fieldPassWord = document.getElementById("pass-one");
+        const valiDity = document.getElementById("validity");
+        const passWordLength = fieldPassWord.value.length;
+        const amountNum = (fieldPassWord.value.match(/\d/g) || []).length;
+
+        if (passWordLength > 5 && amountNum > 2){
+            valiDity.innerText = " Ok"
+             } else {
+          
+                valiDity.innerText = " not OK"
+        }
+
+
+
+    })
+
 })();
