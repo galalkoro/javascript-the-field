@@ -12,5 +12,11 @@
 (function() {
 
     // your code here
+    var x = document.getElementsByClassName("target");
+    x[0].innerHTML = "Owned";
+    x[1].innerHTML = "Owned";
+    x[2].innerHTML = "Owned";
+    x[3].innerHTML = "Owned";
+    x[4].innerHTML = "Owned";
 
 })();
