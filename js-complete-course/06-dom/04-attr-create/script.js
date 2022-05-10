@@ -12,5 +12,14 @@
 (function() {
 
     // your code here
+    var elementSource = document.getElementById("source"); // where source id link image 
+    var img = elementSource.attributes.getNamedItem("data-image").value; // is attribute name image 
+    var elementTarget = document.getElementById("target");
+    var image = document.createElement("img") // new id
+    image.src = img;
+    elementTarget.appendChild(image);
+    console.log(elementSource);
+    elementSource.remove();
+
 
 })();
