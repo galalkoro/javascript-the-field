@@ -12,5 +12,17 @@
 (function() {
 
     // your code here
+   document.getElementById("pass-one").addEventListener("keydown", () => {
+        var elementCounter = document.getElementById("counter");
+        var elementPassOne = document.getElementById("pass-one");
+        var passWordLength = elementPassOne.value.length;
 
+        elementCounter.innerHTML = passWordLength.toString() + "/10";
+        console.log(elementCounter.innerHTML);
+
+        if (elementCounter.innerHTML==="10/10"){
+            document.getElementById("pass-one").setAttribute("disabled", " ");
+        }
+    }) 
+   
 })();
