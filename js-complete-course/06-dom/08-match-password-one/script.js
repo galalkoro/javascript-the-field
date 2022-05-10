@@ -12,5 +12,18 @@
 (function() {
 
     // your code here
+    document.getElementById("run").addEventListener("click", () => {
+        var PassWord = document.getElementById("pass-one");
+        var reEnterPassword = document.getElementById("pass-two");
+
+        if (PassWord.value !== reEnterPassword.value){
+            PassWord.style.borderColor = "red";
+            reEnterPassword.style.borderColor = "red";
+                 } else {
+                    PassWord.style.borderColor = "green";
+                  reEnterPassword.style.borderColor = "green";
+             }
+    })
+
 
 })();
