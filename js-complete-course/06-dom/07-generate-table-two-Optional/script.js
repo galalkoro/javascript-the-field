@@ -12,5 +12,32 @@
 (function() {
 
     // your code here
-
+ 
+    
+  
+    function createTables(maxNum,limit){
+       
+        const table = document.createElement('table');
+        for(let i = 0;i<maxNum + 1;i++){
+            
+            const row = document.createElement('tr');
+            for(let j = 0;j<limit + 1;j++){
+                const td = document.createElement('td');
+                //Below four lines are new
+                if(i === 0 && j === 0) td.innerHTML = '';
+                else if(i === 0) td.innerHTML = j;
+                else if(j === 0) td.innerHTML = i; 
+                else td.innerHTML = i*j;
+                row.appendChild(td);
+                row.setAttribute("bgcolor", "white");
+               
+              
+            }
+            table.appendChild(row)
+         
+        }
+        document.body.appendChild(table)
+       
+    }
+    createTables(10,10);
 })();
