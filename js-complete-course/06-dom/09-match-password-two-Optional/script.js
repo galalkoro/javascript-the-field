@@ -12,5 +12,14 @@
 (function() {
 
     // your code here
+    document.getElementById("run").addEventListener("click", () => {
+        var PassWord = document.getElementById("pass-one");
+        var reEnterPassword = document.getElementById("pass-two");
+        if (PassWord.value !== reEnterPassword.value){
+            PassWord.className = "error";
+            reEnterPassword.className = "error";
+        }
+
+    })
 
 })();
