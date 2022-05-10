@@ -13,6 +13,7 @@
 
     // your code here
    document.getElementById("pass-one").addEventListener("keydown", () => {
+       
         var elementCounter = document.getElementById("counter");
         var elementPassOne = document.getElementById("pass-one");
         var passWordLength = elementPassOne.value.length;
