@@ -13,7 +13,7 @@
     // your code here
   
     async function fetchData() {
-        let response = await fetch('/js-complete-course/_shared/api.json');
+        let response = await fetch('/_shared/api.json');
         let data = await response.json(); // if you replace json with text then you will get full text data
         console.log(data);
     }
