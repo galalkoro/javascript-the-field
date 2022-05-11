@@ -1,7 +1,8 @@
 .idea/
-node_modules/
+node_modules
 package.json
 db-1652254566081.json
 _shared/
 package-lock.json
-package-lock.json
+
+
