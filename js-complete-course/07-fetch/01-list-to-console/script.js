@@ -11,4 +11,13 @@
 
 (() => {
     // your code here
+    let dog = {
+        'breed': 'Golden Retriever',
+        'age': 6,
+        'weakness': ['cookies', 'ball'],
+        'most_popular_villain': 'the Cat'
+    }
+
+    console.log(Object.keys(dog));
+    
 })();
