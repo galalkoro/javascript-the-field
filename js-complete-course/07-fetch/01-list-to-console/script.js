@@ -11,13 +11,13 @@
 
 (() => {
     // your code here
-    let dog = {
-        'breed': 'Golden Retriever',
-        'age': 6,
-        'weakness': ['cookies', 'ball'],
-        'most_popular_villain': 'the Cat'
+  
+    async function fetchData() {
+        let response = await fetch('/js-complete-course/_shared/api.json');
+        let data = await response.json(); // if you replace json with text then you will get full text data
+        console.log(data);
     }
 
-    console.log(Object.keys(dog));
+    fetchData();
     
 })();
