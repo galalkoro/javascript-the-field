@@ -1,12 +1,13 @@
 .idea/
-node_modules
 package.json
 db-1652254566081.json
 _shared/
 package-lock.json
+  node_modules/
+    js-complete-course/
 
 
-node_modules
-node_modules
+js-complete-course/
+js-complete-course
+js-complete-course/
 node_modules/
-node_modules
