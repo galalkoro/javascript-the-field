@@ -11,4 +11,29 @@
 
 (() => {
     // your code here
+    document.getElementById("run").addEventListener("click", fetchFunction)
+   async function fetchFunction() {
+     const resData = await fetch("/_shared/api.json");
+     const conData = await resData.json();
+    // console.log(conData);
+    var targetData = document.getElementById("target");
+
+    conData.heroes.forEach(element => {
+        var list = document.createElement('li');
+       var header = document.createElement('h4')
+       var paragrapgh  = document.createElement('p');
+       var  emphasis = document.createElement('em')
+       target.append(list);
+       target.append(paragrapgh);
+       list.append(header);
+       list.append(emphasis);
+       header.innerHTML = element.name;
+       paragrapgh.innerHTML = element.abilities;
+       emphasis.innerHTML = element.alterEgo;
+        
+    });
+     
+  
+   }
+
 })();
